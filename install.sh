@@ -43,7 +43,7 @@ cd ~/.vim
 git clone --depth 1 https://github.com/ycm-core/YouCompleteMe.git
 cd YouCompleteMe
 git submodule update --init --recursive
-./install.py --clangd-completer 
+CC=gcc-8 CXX=g++-8 /usr/bin/python3 ./install.py --clangd-completer 
 
 
 # vim plugin - tagbar
